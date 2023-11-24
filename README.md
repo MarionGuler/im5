@@ -24,35 +24,6 @@ zusammenfasst. Anschliessend habe ich durch eine kurze Recherche die
 verschiedenen Themen und Inhalte der einzelnen Seiten definiert und dies in
 einem Wireframe skizziert:</p>
 
-<p class="MsoNormal" style="margin-top:0cm;margin-right:-14.5pt;margin-bottom:
-0cm;margin-left:-14.2pt;margin-bottom:.0001pt"><span style="mso-no-proof:yes"><!--[if gte vml 1]><v:shapetype
- id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
- path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
- <v:stroke joinstyle="miter"/>
- <v:formulas>
-  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-  <v:f eqn="sum @0 1 0"/>
-  <v:f eqn="sum 0 0 @1"/>
-  <v:f eqn="prod @2 1 2"/>
-  <v:f eqn="prod @3 21600 pixelWidth"/>
-  <v:f eqn="prod @3 21600 pixelHeight"/>
-  <v:f eqn="sum @0 0 1"/>
-  <v:f eqn="prod @6 1 2"/>
-  <v:f eqn="prod @7 21600 pixelWidth"/>
-  <v:f eqn="sum @8 21600 0"/>
-  <v:f eqn="prod @7 21600 pixelHeight"/>
-  <v:f eqn="sum @10 21600 0"/>
- </v:formulas>
- <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
- <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Grafik_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75"
- alt="Ein Bild, das Text, Screenshot, Diagramm, Rechteck enthält.&#10;&#10;Automatisch generierte Beschreibung"
- style='width:472pt;height:334pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="Read%20Me.fld/image001.jpg" o:title="Ein Bild, das Text, Screenshot, Diagramm, Rechteck enthält"/>
-</v:shape><![endif]--><!--[if !vml]--><img width="472" height="334" src="Read%20Me.fld/image001.jpg" alt="Ein Bild, das Text, Screenshot, Diagramm, Rechteck enthält.
-
-Automatisch generierte Beschreibung" v:shapes="Grafik_x0020_1"><!--[endif]--></span></p>
-
 <p class="MsoNormal">Somit konnte ich mir den Aufbau der Webseite und somit auch
 die einzelnen Komponenten, wie Container und deren Inhalte, besser vorstellen. Anschliessend
 habe ich mich für die Programmiersprachen: HTML, CSS und JS entschieden. Auch
