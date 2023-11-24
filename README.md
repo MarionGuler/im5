@@ -24,6 +24,8 @@ zusammenfasst. Anschliessend habe ich durch eine kurze Recherche die
 verschiedenen Themen und Inhalte der einzelnen Seiten definiert und dies in
 einem Wireframe skizziert:</p>
 
+![Alt-Text](bilder/Wireframe.jpg)
+
 <p class="MsoNormal">Somit konnte ich mir den Aufbau der Webseite und somit auch
 die einzelnen Komponenten, wie Container und deren Inhalte, besser vorstellen. Anschliessend
 habe ich mich für die Programmiersprachen: HTML, CSS und JS entschieden. Auch
