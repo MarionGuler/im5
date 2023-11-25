@@ -47,7 +47,7 @@ ich es dann geschafft und kann nun auch behaupten, es verstanden zu haben.</p>
 
 <p class="MsoNormal">Dementsprechend, ist eines meiner grössten <span class="SpellE">Learnings</span>, schon von Beginn an die mobile Ansicht
 miteinzubeziehen, damit man alles nur einmal machen muss. Auch habe ich dadurch
-gelernt, von der mobilen Ansicht auszugehen, da einfacher ist, alles auf die
+gelernt, von der mobilen Ansicht auszugehen, da es einfacher ist, alles auf die
 Desktopansicht anzupassen. Durch dieses Projekt habe ich die komplexen
 Zusammenhänge der einzelnen Programmiersprachen zum ersten Mal richtig
 verstanden. Es ist mir nun klarer, welche Programmiersprachen zwingen notwendig
