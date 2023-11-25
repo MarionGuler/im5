@@ -1,0 +1,87 @@
+body {
+    background-image: url('../bilder/Titelbild_2.jpeg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm bedeckt */
+    background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    max-height: 500px; /* Beispielhöhe */
+    overflow: auto; /* Fügt eine vertikale Scrollleiste hinzu, wenn der Inhalt die Höhe überschreitet */
+}
+
+.container {
+    text-align: center;
+    margin-top: 10vw;
+    padding-bottom: 0px;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+#nextPageArrow {
+    position: fixed;
+    bottom: 50px;
+    right: -100px; /* Icon außerhalb des Bildschirms */
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: right 1s;
+}
+
+#nextPageArrow a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.video-container video {
+    max-width: 90%;
+    max-height: 50%;
+}
+
+h1 {
+    font-size: 6.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1000px) {
+
+    .video-container{
+      margin-bottom: 0px;
+      height:80vw;/*höhe zurücksetzen*/
+      align-items: first baseline;
+    }
+  
+   
+
+    h1 {
+        font-size: 4.5vw;
+       
+    }
+    
+    h2 {
+        font-size: 2vw;
+        font-style: normal;
+    }
+
+  }
+  
+  
+  
+  
+  
+  

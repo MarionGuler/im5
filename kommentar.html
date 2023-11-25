@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommentar</title>
+    <link rel="icon" href="bilder/Icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="bilder/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/kommentar.css"> <!-- Verweis auf die externe CSS-Datei -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>KOMMENTAR</h1>
+        <h2>Hinterlassen einen Kommentar</h2>
+    </div>
+
+    <form id="commentForm" method="post" autocomplete="on">
+        Name: <input type="text" name="name" required><br>
+        Kommentar: <textarea name="comment" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Kommentar absenden">
+    </form>
+    
+    <!-- Kommentare anzeigen -->
+    <div id="commentsContainer">
+<h2>Kommentare</h2>
+        <!-- Hier werden die Kommentare durch AJAX eingefügt -->
+    </div>
+    
+    <!-- AJAX-Script -->
+    <script>
+        // Kommentarformular absenden und Kommentare aktualisieren
+        $(document).ready(function(){
+            $("#commentForm").submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                    type: "POST",
+                    url: "php/kommentar.php",
+                    data: $(this).serialize(),
+                    success: function(){
+                        loadComments(); // Kommentare aktualisieren
+                        $("#commentForm")[0].reset(); // Formular zurücksetzen
+                    }
+                });
+            });
+    
+            // Initial Kommentare laden
+            loadComments();
+    
+            // Funktion zum Laden der Kommentare
+            function loadComments(){
+                $.ajax({
+                    type: "GET",
+                    url: "php/zeigen.php",
+                    success: function(data){
+                        $("#commentsContainer").html(data);
+                    }
+                });
+            }
+        });
+    </script>
+
+
+    <div id="nextPageArrow">
+        <a href="ende.html">
+            <img src="bilder/Icon.png" alt="Pfeil Icon" style="width: 80px; height: 80px;">
+        </a>
+    </div>
+
+    <script src="js/kommentar.js"></script>
+</body>
+</html>

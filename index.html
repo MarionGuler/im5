@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architekturfotografie</title>
+    <link rel="icon" href="bilder/Icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="bilder/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/index.css"> <!-- Verweis auf die externe CSS-Datei -->
+    <link rel="manifest" href="json/manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>ARCHITEKTURFOTOGRAFIE</h1>
+        <h2>Das Handbuch</h2>
+    </div>
+
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="videos/Video_2.mov" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="nextPageArrow">
+        <a href="definition.html">
+            <img src="bilder/Icon.png" alt="Pfeil Icon" style="width: 80px; height: 80px;">
+        </a>
+    </div>
+
+    <script src="js/index.js"></script>
+    <!-- Registriene vom Service Worker-->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('js/serviceworker.js')
+                .then((registration) => {
+                    console.log('Service Worker registriert:', registration);
+                })
+                .catch((error) => {
+                    console.log('Fehler bei der Registrierung des Service Workers:', error);
+                });
+        }
+    </script>
+</body>
+</html>

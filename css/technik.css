@@ -1,0 +1,112 @@
+body {
+    background-image: url('../bilder/Titelbild_2.jpeg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm bedeckt */
+    background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    max-height: 500px; /* Beispielhöhe */
+    overflow: auto; /* Fügt eine vertikale Scrollleiste hinzu, wenn der Inhalt die Höhe überschreitet */
+}
+
+.container {
+  text-align: center;
+  margin-top: 10vw;
+  padding-bottom: 0px;
+  margin-bottom: 10vw;
+}
+
+h1 {
+  font-size: 6.5vw;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 4vw;
+}
+
+#nextPageArrow {
+    position: fixed;
+    bottom: 50px;
+    right: -100px; /* Icon außerhalb des Bildschirms */
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: right 1s;
+}
+
+#nextPageArrow a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-size: 4vw; 
+  word-wrap: break-word; /* Trennt lange Wörter um und passt sie an die Breite an */
+  overflow-wrap: break-word; /* Alternative zur Unterstützung in älteren Browsern */
+  hyphens: auto; /* Automatische Silbentrennung */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: slideIn 1s ease-out; /* Fügt die Animation hinzu */
+    justify-content: center;
+  }
+
+  .image-container img {
+    width: 25%;
+    margin: 40px;
+  }
+
+  .image-caption {
+    text-align: center;
+    max-width: 220px;
+    margin-left: 30px;
+    margin-bottom: 5vw;
+  }
+
+  .image-caption1 {
+    text-align: center;
+    max-width: 220px;
+    margin-left: 60px;
+    margin-bottom: 5vw;
+  }
+
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%); /* Startet außerhalb des sichtbaren Bereichs (rechts) */
+    }
+    to {
+      transform: translateX(0); /* Endet in der normalen Position */
+    }
+  }
+
+  @media (min-width: 1000px) {
+
+    h1 {
+        font-size: 4.5vw;
+       
+    }
+    
+    h2 {
+        font-size: 2vw;
+        font-style: normal;
+    }
+    p {
+      font-size: 1.4vw; 
+      word-wrap: break-word; /* Trennt lange Wörter um und passt sie an die Breite an */
+      overflow-wrap: break-word; /* Alternative zur Unterstützung in älteren Browsern */
+      hyphens: auto; /* Automatische Silbentrennung */
+  }
+
+  }

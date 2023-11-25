@@ -1,0 +1,135 @@
+body {
+    background-image: url('../bilder/Titelbild_2.jpeg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm bedeckt */
+    background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    max-height: 500px; /* Beispielhöhe */
+    overflow: auto; /* Fügt eine vertikale Scrollleiste hinzu, wenn der Inhalt die Höhe überschreitet */
+}
+
+.container {
+    text-align: center;
+    margin-top: 10vw;
+    padding-bottom: 0px;
+    margin-bottom: 10vw;  
+}
+
+h1 {
+    font-size: 6.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 4vw;
+    font-style: normal;
+}
+
+#nextPageArrow {
+    position: fixed;
+    bottom: 50px;
+    right: -100px; /* Icon außerhalb des Bildschirms */
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: right 1s;
+}
+
+#nextPageArrow a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 4vw; 
+    overflow-wrap: break-word; /* Alternative zur Unterstützung in älteren Browsern */
+    hyphens: auto; /* Automatische Silbentrennung */
+}
+
+.bild {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 2vw;
+    height: 70vw;
+    width: auto;
+}
+
+.text  {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 2vw;
+    height: auto;
+    width: 53vw;
+    margin-left: 22vw;
+}
+
+.ich {
+    margin-bottom: 10vw;
+
+}
+
+@media (min-width: 1000px) {
+    .ich{
+      display:grid; /*https://www.youtube.com/watch?v=jV8B24rSN5o*/
+      
+      grid-template-columns: 45% 45% ;
+      /*grid-template-columns: 400px 400px;*/
+  
+      grid-column-gap:10px;
+      grid-row-gap:10px;
+      /*grid-column-gap:1%;
+      grid-row-gap:1vw;*/
+      justify-content: center;
+      margin-left: 20vw;
+      margin-right: 20vw;
+
+    }
+  
+    .text, .bild{
+      margin-bottom: 0px;
+    }
+  
+    .bild{
+      height:30vw;/*höhe zurücksetzen*/
+    }
+  
+    .text{
+      height:auto;
+      margin-bottom: 5vw;
+      height: 40vw;
+      width: auto;
+      margin-left: 0;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+       
+    }
+    
+    h2 {
+        font-size: 2vw;
+        font-style: normal;
+    }
+
+
+p {
+
+    font-size: 1.4vw; 
+    word-wrap: break-word; /* Trennt lange Wörter um und passt sie an die Breite an */
+    overflow-wrap: break-word; /* Alternative zur Unterstützung in älteren Browsern */
+    hyphens: auto; /* Automatische Silbentrennung */
+}
+
+  }

@@ -1,0 +1,131 @@
+body {
+    background-image: url('../bilder/Titelbild_2.jpeg'); /* Pfad zum Hintergrundbild */
+    background-size: cover; /* Das Bild wird so skaliert, dass es den gesamten Bildschirm bedeckt */
+    background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert */
+    background-repeat: no-repeat; /* Das Bild wird nicht wiederholt */
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    max-height: 500px; /* Beispielhöhe */
+    overflow: auto; /* Fügt eine vertikale Scrollleiste hinzu, wenn der Inhalt die Höhe überschreitet */
+}
+.container {
+    text-align: center;
+    margin-top: 10vw;
+    padding-bottom: 0px;
+    margin-bottom: 10vw;
+ 
+}
+
+h1 {
+    font-size: 6.5vw;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 4vw;
+    font-style: normal;
+}
+
+#nextPageArrow {
+    position: fixed;
+    bottom: 50px;
+    right: -100px; /* Icon außerhalb des Bildschirms */
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: right 1s;
+}
+
+#nextPageArrow a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 4vw; 
+    word-wrap: break-word; /* Trennt lange Wörter um und passt sie an die Breite an */
+    overflow-wrap: break-word; /* Alternative zur Unterstützung in älteren Browsern */
+    hyphens: auto; /* Automatische Silbentrennung */
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 10vw;
+    max-width: 90vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+}
+
+.bild1, .bild2, .bild3, .bild4, .bild5  {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 2vw;
+    height: 40vw;
+    width: auto;
+}
+.alles {
+    margin-bottom: 10vw;
+    
+}
+
+@media (min-width: 1000px) {
+    .alles{
+      display:grid; /*https://www.youtube.com/watch?v=jV8B24rSN5o*/
+      
+      grid-template-columns: 18% 18% 18% 18% 18%;
+      /*grid-template-columns: 400px 400px;*/
+  
+      grid-column-gap:10px;
+      grid-row-gap:10px;
+      /*grid-column-gap:1%;
+      grid-row-gap:1vw;*/
+      justify-content: center;
+
+    }
+  
+    .text, .bild1, .bild2, .bild3, .bild4, .bild5{
+      margin-bottom: 0px;
+    }
+  
+    .bild1, .bild2, .bild3, .bild4, .bild5{
+      height:10vw;/*höhe zurücksetzen*/
+    }
+  
+    .text{
+      height:auto;
+      margin-bottom: 5vw;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+       
+    }
+    
+    h2 {
+        font-size: 2vw;
+        font-style: normal;
+    }
+
+
+    p {
+        
+        font-size: 1.4vw; 
+        word-wrap: break-word; /* Trennt lange Wörter um und passt sie an die Breite an */
+        overflow-wrap: break-word; /* Alternative zur Unterstützung in älteren Browsern */
+        hyphens: auto; /* Automatische Silbentrennung */
+        text-align: center;
+    }
+
+  }
